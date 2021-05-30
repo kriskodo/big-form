@@ -1,0 +1,70 @@
+.form__label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.form__err {
+	color: #bb2124;
+	opacity: 0;
+	pointer-events: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.form__input_container {
+	position: relative;
+}
+
+.form__required {
+	position: absolute;
+	content: "*";
+	color: red;
+	left: -20px;
+	top: 5px;
+	width: 10px;
+	height: 10px;
+}
+
+.form__input {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	outline: none;
+	padding: 10px 5px;
+	width: 200px;
+	height: 40px;
+}
+
+.form__label > span {
+	position: absolute;
+	transition: 'all .3s ease';
+	pointer-events: none;
+}
+
+/* This hides the arrows on the number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* modify the date input slightly */
+::-webkit-datetime-edit-text {
+	color: rgba(63, 60, 60, 0.5);
+	pointer-events: none;
+}
+::-webkit-datetime-edit-month-field {
+	color: rgba(63, 60, 60, 0.5);
+	pointer-events: none;
+}
+::-webkit-datetime-edit-day-field {
+	color: rgba(63, 60, 60, 0.5);
+	pointer-events: none;
+}
+::-webkit-datetime-edit-year-field {
+	color: rgba(63, 60, 60, 0.5);
+	pointer-events: none;
+}
